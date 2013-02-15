@@ -46,7 +46,24 @@ margin-left:-45px
     float: right;
 }
 
+#tweet{
 
+position:fixed; 
+left:10px; 
+top:25px; 
+z-index: 5; 
+width: 12%; 
+height: 6%; 
+}
+
+#fb{
+position:fixed; 
+right:28px; 
+top:25px; 
+z-index: 5; 
+width: 12%; 
+height: 6%; 
+}
 
 #one { 
 position:fixed; 
@@ -120,5 +137,3 @@ background-image: (../images/wall.jpg);
 background-image: (../images/wall.jpg);
 
 }
-
-
