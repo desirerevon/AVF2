@@ -1,3 +1,5 @@
+//GEO DEMO-------------------------------------------------------------------------
+
 // Wait for PhoneGap to load
 //
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -29,3 +31,4 @@ function onError(error) {
     alert('code: '    + error.code    + '\n' +
           'message: ' + error.message + '\n');
 }
+

@@ -1,6 +1,12 @@
-//Load Camera
-function onDevLoad(){
-    document.addEventListener("deviceready", onDeviceReady, false);
+//CAMERA DEMO-------------------------------------------------------------------------
+
+var pictureSource; // picture source
+var destinationType; // sets the format of returned value
+
+
+function onDevLoad()
+{
+    document.addEventListener("deviceready",onDeviceReady, false);
 }
 
 //gets into phonegap's libraries to set source and destination
@@ -24,7 +30,7 @@ function onPhotoDataSuccess(imageData) {
 //Runs when a picture is taken
 function onPhotoURISuccess(imageURI) {
     // grabs image tag from html
-	var largeImage = document.getElementById('largeImage');
+    var largeImage = document.getElementById('largeImage');
     
     // Unhide image elements
     largeImage.style.display = 'block';
@@ -36,24 +42,27 @@ function onPhotoURISuccess(imageURI) {
 //takes picture
 function capturePhoto() {
     // Take picture using device camera and retrieve image as base64-encoded string
-    navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 45 });
+    navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 45, destinationType: destinationType.FILE_URI, saveToPhotoAlbum: true  });
 }
 
 //Takes editable picture
 function capturePhotoEdit() {
     // Take picture using device camera, allow edit, and retrieve image as base64-encoded string
-    navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true });
+    navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,saveToPhotoAlbum: true });
 }
 
 //grabs photo from specific source
 function getPhoto(source) {
+    
+    
     // Retrieve image file location from specified source
     navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 45,
                                 destinationType: destinationType.FILE_URI,
-                                sourceType: source });
+                                sourceType: source, saveToPhotoAlbum: true });
 }
 
 //Errors
 function onFail(message) {
     alert('Please try again: ' + message);
 }
+

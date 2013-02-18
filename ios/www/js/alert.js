@@ -1,3 +1,6 @@
+
+//ALERT DEMO-------------------------------------------------------------------------
+
 function onBodyLoad()
 {
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -19,7 +22,7 @@ function alertDismissed() {
 //
 function showAlert() {
     navigator.notification.alert(
-                                 'She is located at Club Mink!', // message
+                                 'Is this your location?', // message
                                  alertDismissed, // callback
                                  'Alert', // title
                                  'Done' // buttonName

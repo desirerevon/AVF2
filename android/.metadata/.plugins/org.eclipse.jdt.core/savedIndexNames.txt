@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+/Users/desiregardner/Desktop/AVF2/android/.metadata/.plugins/org.eclipse.jdt.core
-58023163.index
-1752393.index

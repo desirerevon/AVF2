@@ -1,3 +1,5 @@
+//ACEL DEMO-------------------------------------------------------------------------
+
 // The watch id references the current `watchAcceleration`
 var watchID = null;
 
@@ -29,7 +31,7 @@ function stopWatch() {
         navigator.accelerometer.clearWatch(watchID);
         watchID = null;
     }
-}
+};
 
 // onSuccess: Get a snapshot of the current acceleration
 //

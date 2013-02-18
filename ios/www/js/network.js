@@ -1,3 +1,6 @@
+\//NETWORK DEMO-------------------------------------------------------------------------
+
+
 // Wait for Cordova to load
 //
 document.addEventListener("deviceready", onDeviceReady, false);
@@ -22,3 +25,4 @@ function checkConnection() {
     
     alert('Connection type: ' + states[networkState]);
 }
+
