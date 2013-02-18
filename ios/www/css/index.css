@@ -17,13 +17,13 @@ ul{
 list-style-type: none;
 }
 
+#native li{
+  float:top;
+  width:350px;
 
 
-#acel{
-    min-height: 100%;
-    background-size: cover;
-    background-image: url(../images/wall.jpg);
-    background-repeat: no-repeat;
-    background-position: left top;
+}
 
+#api{
+float:left;
 }
