@@ -17,22 +17,30 @@
                 
         <!--Style Sheets-->
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        
+     
                 
                 
-                    
+                 
 </head>
-<body>
-
-        
-        <a href="index.html" class="back_btn">BACK</a>
+<body onload="onBodyLoad()">
+  		
+     <a href="index.html" class="back_btn">BACK</a>
     
-    <section id="geo">
-        
-        
-    </section>
-        
+    <div data-role="page" id="geoLoc">
+                <div data-role="content">
+                    <div role="main" id="mainContent">
+                        <h2>GEO LOCATION</h1>
+                        <p class="intro" id="demo">Find your Location </p>
+                        <button onclick="getLocation()">Search</button>
+                    <div id="mapcontainer"></div>
+                </div>
+                
+            <div class="push"></div>
+                
 
     
+
     
     <footer>
         <h5>Desire Revon :: AVF1302 :: Full Sail University</h5>
@@ -41,6 +49,8 @@
     
     <script type="text/javascript" src="js/libs/jquery.js"></script>
     <script type="text/javascript" src="cordova-2.3.0.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
     <script type="text/javascript" src="js/geo.js"></script>
+    
 </body>
 </html>

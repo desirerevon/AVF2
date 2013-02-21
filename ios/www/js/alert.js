@@ -1,17 +1,23 @@
-
-//ALERT DEMO-------------------------------------------------------------------------
-
-function onBodyLoad()
-{
+function onBodyLoad() {
     document.addEventListener("deviceready", onDeviceReady, false);
 }
 
-function onDeviceReady()
-{
+function onDeviceReady() {
     // do your thing!
     phoneGapReady.innerHTML = ("")
     
 }
+
+var playBeep = function() {
+    navigator.notification.beep(4);
+}
+
+
+var vibrate= function(){
+    navigator.notification.vibrate(2000);
+    console.log("Vibrating")
+}
+
 
 // alert dialog dismissed
 function alertDismissed() {
@@ -20,27 +26,27 @@ function alertDismissed() {
 
 // Show a custom alert
 //
-function showAlert() {
-    navigator.notification.alert(
-                                 'Is this your location?', // message
-                                 alertDismissed, // callback
-                                 'Alert', // title
-                                 'Done' // buttonName
-                                 );
+function onClick() {
+    navigator.notification.alert (
+                                  'You clicked Alert!', // message
+                                  alertDismissed, // callback
+                                  'Alert Demo', // title
+                                  'Done' // buttonName
+                                  );
 }
 
 // process the confirmation dialog result
 function onConfirm(button) {
-    alert('Location ' + button);
+    alert('You chose button ' + button);
 }
 
 // Show a custom confirmation dialog
 //
 function showConfirm() {
     navigator.notification.confirm(
-                                   'What now?', // message
+                                   'You clicked Confirm!', // message
                                    onConfirm, // callback to invoke with index of button pressed
-                                   'Alert', // title
-                                   'Confirm Location,Confirmed' // buttonLabels
+                                   'Confirm Demo', // title
+                                   'Restart,Exit' // buttonLabels
                                    );
 }

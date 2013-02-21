@@ -1,42 +1,29 @@
 
-// Wait for PhoneGap to load
-//
+//TWITTER API-------------------------------------------------------------------------
 
-function onBodyLoad () {
-    document.addEventListener("deviceready", onDeviceReady, false);
-}
-
-// PhoneGap is ready
-//
-function onDeviceReady() {
-    
-    //put stuff here if necessary. This is just to get rid of inline JS in the HTML.
-    
-}
-
-//TWITTER DEMO-------------------------------------------------------------------------
+$(document).ready(function(){
+                  $.getJSON("http://search.twitter.com/search.json?q=rihannastay&rpp=8&include_entities=true&result_type=popular&callback=?",
+                            function(data){
+                            console.log(data);
+                            for (i=0, j=data.results.length; i<j; i++){
+                            $("#output")
+                            .append("<li>" + "<p>" + "<img src='" + data.results[i].profile_image_url + "' /><br />" +
+                                    data.results[i].text + ", <em>" + data.results[i].created_at + "</em>" + "</p>" + "</li>" + "</hr>");
+                            }
+                            });
+                  });
 
 
-//My API was working but I am getting a syntax error for the undefined $
-//@nd syntax error is that I cant get the data to show
-//Planning on using instagram as well for my second API
+// WEATHER JOBS API-------------------------------------------------------------------------
 
-
-function twittFeed(){
-    
-    $.getJSON("http://search.twitter.com/search.json?q=rihannas%20stay&rpp=5&include_entities=true&result_type=popular&callback=?",
-              function(tweet){
-              console.log(tweet);
-              
-              $("#tweetsSearch").html("<p>Data Retreived!</p>");
-              
-              for (i=0, j=tweet.results.length; i<j; i++){
-              
-              $("#tweet-output")
-              .append("<li>" + "<p>" + "<img src='" + tweet.results[i].profile_image_url + "'/><br />" + tweet.results[i].text + " ,<em>" +
-                      tweet.results[i].created_at + "</em>" + "</p>" + "</li>");
-              }
-              
-              });
-};
-
+$(document).ready(function(){
+  $.ajax({
+         url : "http://api.wunderground.com/api/e9f12166a760671a/geolookup/conditions/q/TX/San_Antonio.json",
+         dataType : "jsonp",
+         success : function(parsed_json) {
+         var location = parsed_json['location']['city'];
+         var temp_f = parsed_json['current_observation']['temp_f'];
+         alert("Current forecast for " + location + " is: " + temp_f);
+         }
+         });
+  });

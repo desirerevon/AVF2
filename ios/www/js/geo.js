@@ -1,34 +1,65 @@
-//GEO DEMO-------------------------------------------------------------------------
 
-// Wait for PhoneGap to load
-//
-document.addEventListener("deviceready", onDeviceReady, false);
 
-// PhoneGap is ready
-//
-function onDeviceReady() {
-    navigator.geolocation.getCurrentPosition(onSuccess, onError);
+
+
+
+
+function onBodyLoad()
+{
+    document.getElementById('geoLoc').empty();
+    document.addEventListener("deviceready", onDeviceReady, false);
 }
 
-// onSuccess Geolocation
-//
-function onSuccess(position) {
-    var element = document.getElementById('geo');
-    element.innerHTML =
-    'Latitude: '           + position.coords.latitude              + '<br />' +
-    'Longitude: '          + position.coords.longitude             + '<br />' +
-    'Altitude: '           + position.coords.altitude              + '<br />' +
-    'Accuracy: '           + position.coords.accuracy              + '<br />' +
-    'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
-    'Heading: '            + position.coords.heading               + '<br />' +
-    'Speed: '              + position.coords.speed                 + '<br />' +
-    'Timestamp: '          + new Date(position.timestamp)          + '<br />';
+function onDeviceReady()
+{
+    
+    phoneGapReady.innerHTML = ("")
+}
+var x=document.getElementById("demo");
+
+function getLocation()
+{
+    if (navigator.geolocation)
+    {
+        navigator.geolocation.getCurrentPosition(showPosition,showError);
+    }
+    else{x.innerHTML="Geolocation not supported";}
 }
 
-// onError Callback receives a PositionError object
-//
-function onError(error) {
-    alert('code: '    + error.code    + '\n' +
-          'message: ' + error.message + '\n');
+function showPosition(position)
+{
+    lat=position.coords.latitude;
+    lon=position.coords.longitude;
+    latlon=new google.maps.LatLng(lat, lon);
+    mapcontainer=document.getElementById('mapcontainer')
+    mapcontainer.style.height='250px';
+    mapcontainer.style.width='100%';
+    
+    var myOptions={
+    center:latlon,zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP,
+    mapTypeControl:false,
+    navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+    };
+    var map=new google.maps.Map(document.getElementById("mapcontainer"),myOptions);
+    var marker=new google.maps.Marker({position:latlon,map:map,title:"Your Location."});
 }
 
+function showError(error)
+{
+    switch(error.code)
+    {
+        case error.PERMISSION_DENIED:
+            x.innerHTML="User did not allow Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML="Location not available."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML="Requested Timed Out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML="Error unknown."
+            break;
+    }
+}
