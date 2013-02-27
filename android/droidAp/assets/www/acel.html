@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Desire Revon</title>
+		<meta name="description" content="Desire Revon Demo App"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+        
+        
+		<!--  Mobile viewport optimized -->
+		<meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+                
+                
+        <!--Style Sheets-->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+                
+                    
+                                      
+</head>
+ <body>
+    
+     <header>
+        <a href="index.html" class="back_btn">BACK</a>
+    </header>
+    
+    <section id="acel">
+		<button onclick="getCurrentAcceleration();">Acceleration Alert</button>
+
+			<div id="sphere_content">
+
+				<h1>Test</h1>
+				<div id=sphere></div>
+				<ul class="accTable">
+				<li>Acceleration x: <span id=accelerationX></span>g</li>
+				<li>Acceleration y: <span id=accelerationY></span>g</li>
+				<li>Acceleration z: <span id=accelerationZ></span>g</li>
+				<li>Rotation alpha: <span id=rotationAlpha></span>degree</li>
+				<li>Rotation beta: <span id=rotationBeta></span>degree</li>
+				<li>Rotation gamma: <span id=rotationGamma></span>degree</li>
+				</ul>
+
+			</div>
+    </section>
+    
+     <footer>
+        <h5>Desire Revon :: AVF1302 :: Full Sail University</h5>
+    </footer>
+     
+     
+     <script type="text/javascript" src="js/libs/jquery.js"></script>
+     <script type="text/javascript" src="cordova-2.3.0.js"></script>
+     <script type="text/javascript" src="js/acel.js"></script>
+    
+ </body>
+</html>

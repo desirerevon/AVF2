@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Desire Revon</title>
+		<meta name="description" content="Desire Revon Demo App"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+        
+        
+		<!--  Mobile viewport optimized -->
+		<meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+                
+        <!--Style Sheets-->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+                
+                    
+</head>
+    <body onload="onDevLoad()">
+
+    
+        <a href="index.html" class="back_btn">BACK</a>
+       
+           
+            
+            <!--Designed buttons for simple design-->
+        <section>
+            <ul>
+                <li>
+                <input type="image" id="takepicture" src="images/camButton.png" alt="Take a Picture" name="Take a Picture" height="55" width="324" onclick="capturePhoto();">
+                </li>
+                <li>
+                <input type="image" id="takeeditpicture" src="images/editButton.png" alt="Take an Editable Picture" name="Take an Editable Picture" height="55" width="324" onclick="capturePhotoEdit();">
+                </li>
+                <li>
+               <input type="image" id="photolibrary" src="images/libraryButton.png" alt="From Photo Library" name="From Photo Library" height="55" width="324" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">
+                </li>
+                <li>
+                <input type="image" id="photoalbum" src="images/albumButton.png" alt="From Photo Album" name="From Photo Album" height="55" width="324" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">
+                </li>
+            </ul>
+        </section>
+        
+
+
+    <footer>
+        <h5>Desire Revon :: AVF1302 :: Full Sail University</h5>
+    </footer>
+    
+        <script type="text/javascript" src="js/libs/jquery.js"></script>
+        <script type="text/javascript" src="cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="js/camera.js"></script>
+
+</body>
+</html>

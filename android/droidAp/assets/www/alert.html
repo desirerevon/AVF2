@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="UTF-8">
+        <title>Desire Revon</title>
+        <meta name="description" content="Desire Revon Demo App"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+        
+        
+		<!--  Mobile viewport optimized -->
+		<meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+                    
+        <!--Style Sheets-->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+                                     
+                    
+</head>
+<body onload="onBodyLoad()">
+    
+
+    <header>
+    <a href="index.html" class="back_btn">BACK</a>
+    </header>
+    
+    
+    <section>
+        <section role="main" id="secondary_content" >
+            
+            <section>
+                <input type="button" name="location" value="Location" onClick="prompt('Enter Your Location?')">
+                <input type="button" name="click"    value="Click"    onClick="alert('Boom, this is an alert!')">
+                <input type="button" name="button"   value="Vibrate"  onClick="vibrate(); return false;">
+                <input type="button" name="beep"     value="Beep"     onclick="playBeep(); return false;">
+
+            </secton>
+                            
+           <section class="push"></section>
+      
+    </section>
+</section>
+    
+    
+    
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="cordova-2.3.0.js"></script>
+    <script type="text/javascript" src="js/alert.js"></script>
+
+    </body>
+
+</html>
