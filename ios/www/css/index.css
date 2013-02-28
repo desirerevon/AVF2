@@ -7,6 +7,15 @@ html{
     background-position: left top;
 }
 
+
+#splashPage{
+    min-height: 100%;
+    background-size: cover;
+    background-image: url(../images/splashPage.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
 header{
     text-align:center;
 }
