@@ -1,0 +1,10 @@
+$(".video").live("click", function(e) {
+    e.preventDefault();
+    $(this).replaceWith("<video id='" + $(this).data("video-id") + "' class='video-js' preoload='auto' width='100%' height='100%' poster='" + $(this).data("video-poster-url") + "'><source type='video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"' src='" + $(this).data("video-url")  + "'></video>");
+
+    video  = _V_($(this));
+    video.ready(function() {
+       this.play();
+       this.requestFullScreen();
+    });
+});
