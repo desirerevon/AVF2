@@ -1,73 +1,128 @@
 <!DOCTYPE html>
+
 <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Desire Revon</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
+		<meta name="description" content="Desire Revon Demo App"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
         
+        
+		<!--  Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Style Sheets-->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+            
+
+            
+            
 </head>
 <body>
     
-    <!--HEADER DEVELOPER INFO-->
-    <div>
-        <header><img src="images/desireRevon.png" alt="" title="" /></header>
+   
+
+    <div data-role="page" id="home">
         
-    </div>
-    
-    
-    <!--iOS && Android OR iOS Native APIs-->
-
-    <div class="section" id="pinkBow">
-        <div>
-            <span id="alert"><img src="images/textAlert.png" alt="" title="" /></span>
-            <a href="#"><div><img src="images/pinkAlert.png" alt="" title="" /></a></div>
-            <span id="acel"><img src="images/textAcel.png" alt="" title="" /></span>
-            <a href="#"><div><img src="images/pinkAcel.png" alt="" title="" /></div>
-            <span id="geoLoc"><img src="images/textGeo.png" alt="" title="" /></span>
-            <a href="#"><div><img src="images/pinkGeo.png" alt="" title="" /></a></div>
-        </div>
-    </div>
 
     
-    <div class="section" id="blackBow">
-            <span id="contact"><img src="images/textContact.png" alt="" title="" /></span>
-            <a href="#"><div><img src="images/blackContact.png" alt="" title="" /></a></div>
-            <span id="cam"><img src="images/textCamera.png" alt="" title="" /></span>
-            <a href="#"><div><img src="images/blackCamera.png" alt="" title="" /></div>
-            <span id="net"><img src="images/textNetwork.png" alt="" title="" /></span>
-            <a href="#"><div><img src="images/blackNetwork.png" alt="" title="" /></a></div>
-        </div>
-    </div>
-        
+    <!--iOS/Android Native Applications Demos-->
+    <section id="native">
+            <ul>
+                <li>
+                    <a id="al" href="alert.html"><img src="images/alertButton.png" alt="" /></a>
+                </li>
+                <li>
+                    <a id="ac" href="acel.html"><img src="images/acelButton.png" alt="" /></a>
+                </li>
+                <li>
+                    <a id="ge" href="geo.html"><img src="images/geoButton.png" alt="" /></a><br>
+                </li>
+                <li>
+                    <a id="co" href="contact.html"><img src="images/contactButton.png" alt="" /></a>
+                </li>
+                <li>
+                    <a id="ca" href="camera.html"><img src="images/cameraButton.png" alt="" /></a>
+                </li>
+                <li>
+                    <a id="ne" href="network.html"><img src="images/networkButton.png" alt="" /></a>
+                </li>
+           </ul>
+    </section>
+</div>
+    <!--End Of Demo Items-->
     
- 
-    <!--ICONS-->
-            
-    <div id="fb">
-        <a href="#"><div><img src="images/facebookIcon.png" alt="" title="" /></a></div>
-    </div>
- 
-    <div id="tweet">
-        <a href="#"><div><img src="images/twitterIcon.png" alt="" title="" /></a></div>
-    </div>
-                
-    <!--Discussion Questions-->
+   
+    <section id="questions">
+        <ul>
+            <li>
+                <a id="one" href="weekOne.html"><img src="images/weekOne.png" alt="" /></a>
+            </li>
+            <li>
+                <a id="two" href="weekTwo.html"><img src="images/weekTwo.png" alt="" /></a>
+            </li>
+            <li>
+                <a id="three" href="weekThree.html"><img src="images/weekThree.png" alt="" /></a><br>
+            </li>
+        </ul>
+    </section>
     
-    <footer>
-        <a href="#" id="one" ><div><img src="images/questionOne.png" alt="" title="" /></a></div>
-        <a href="#" id="two"><div><img src="images/questionTwo.png" alt="" title="" /></a></div>
-        <a href="#" id="three"><div><img src="images/questionThree.png" alt="" title="" /></a></div>
-    </footer>
-                
+    
+    <!--DEVELOPER INFO-->
+    
+    <section id="developerPage">
+        <ul>
+            <li>
+                <!---->
+                <a href="dev.html"><img src="images/developer.png" alt="devloper"></a>
+            </li>
+        </ul>
+    </section>
+
+    
+    <!--DEVELOPER INFO-->
+    
+    <section id="videoPage">
+        <ul>
+            <li>
+                <!---->
+                <a href="video.html"><img src="images/movieIcon.png" alt="vids"></a>
+            </li>
+        </ul>
+    </section>
+    
+    
+    <!-- WEATHER API-->
+    
+    <section id="weatherPage">
+        <ul>
+            <li>
+                <!---->
+                <a href="weather.html"><img src="images/wIcon.png" alt="weather"></a>
+            </li>
+        </ul>
+    </section>
 
 
-                <!--SCRIPT-->
-                <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.css" />
-                <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-                <script src="http://code.jquery.com/mobile/1.3.0-rc.1/jquery.mobile-1.3.0-rc.1.min.js"></script>
-        
-        </body>
+    <!--Twitter API-->
+  
+    <section id="twitterPage">
+        <ul>
+            <li>
+                <a href="twitter.html"><img src="images/twitterIcon.png" alt="twitter"></a>
+            </li>
+        </ul>
+    </section>
+    
+  
+
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="cordova-2.3.0.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+    </script>
+
+    
+    </body>
 </html>
-
-

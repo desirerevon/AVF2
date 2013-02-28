@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Desire Revon</title>
+    </head>
+    <body>
+        <div data-role="page" id="home">
+        
+
+    
+    <!--iOS/Android Native Applications Demos-->
+    <section id="native">
+            <ul>
+                <li>
+                    <a id="al" href="alert.html"><img src="images/alertButton.png" alt="" /></a>
+                </li>
+                <li>
+                    <a id="ac" href="acel.html"><img src="images/acelButton.png" alt="" /></a>
+                </li>
+                <li>
+                    <a id="ge" href="geo.html"><img src="images/geoButton.png" alt="" /></a><br>
+                </li>
+                <li>
+                    <a id="co" href="contact.html"><img src="images/contactButton.png" alt="" /></a>
+                </li>
+                <li>
+                    <a id="ca" href="camera.html"><img src="images/cameraButton.png" alt="" /></a>
+                </li>
+                <li>
+                    <a id="ne" href="network.html"><img src="images/networkButton.png" alt="" /></a>
+                </li>
+           </ul>
+    </section>
+</div>
+    <!--End Of Demo Items-->
+    
+   
+    <section id="questions">
+        <ul>
+            <li>
+                <a id="one" href="weekOne.html"><img src="images/weekOne.png" alt="" /></a>
+            </li>
+            <li>
+                <a id="two" href="weekTwo.html"><img src="images/weekTwo.png" alt="" /></a>
+            </li>
+            <li>
+                <a id="three" href="weekThree.html"><img src="images/weekThree.png" alt="" /></a><br>
+            </li>
+        </ul>
+    </section>
+    
+    
+    <!--DEVELOPER INFO-->
+    
+    <section id="developerPage">
+        <ul>
+            <li>
+                <!---->
+                <a href="dev.html"><img src="images/developer.png" alt="devloper"></a>
+            </li>
+        </ul>
+    </section>
+
+    
+    <!--DEVELOPER INFO-->
+    
+    <section id="videoPage">
+        <ul>
+            <li>
+                <!---->
+                <a href="video.html"><img src="images/movieIcon.png" alt="vids"></a>
+            </li>
+        </ul>
+    </section>
+    
+    
+    <!-- WEATHER API-->
+    
+    <section id="weatherPage">
+        <ul>
+            <li>
+                <!---->
+                <a href="weather.html"><img src="images/wIcon.png" alt="weather"></a>
+            </li>
+        </ul>
+    </section>
+
+
+    <!--Twitter API-->
+  
+    <section id="twitterPage">
+        <ul>
+            <li>
+                <a href="twitter.html"><img src="images/twitterIcon.png" alt="twitter"></a>
+            </li>
+        </ul>
+    </section>
+
+        <script type="text/javascript" src="cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

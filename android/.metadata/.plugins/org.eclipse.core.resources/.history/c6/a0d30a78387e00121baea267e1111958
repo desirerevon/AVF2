@@ -1,0 +1,223 @@
+
+html{
+    min-height: 100%;
+    background-size: cover;
+    background-image: url(../images/wall.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+header{
+    text-align:center;
+}
+
+ul{
+
+list-style-type: none;
+}
+
+.back_btn{
+color: #ffffff;
+}
+
+#weekOne h3{
+color: #000066;
+
+}
+
+#weekTwo h3{
+color: #000066;
+
+}
+
+#weekOne h3{
+
+}
+
+#developerInfo h3{
+color: #000066;
+
+}
+
+#developerPage ul li{
+bottom: -50px;
+right: -200px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+}
+
+
+
+
+#native ul li #al{
+bottom: 15px;
+right: -345px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+
+}
+
+#native ul li #ac{
+bottom: 15px;
+right: -450px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+
+}
+
+#native ul li #ge{
+bottom: 15px;
+right: -580px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+
+}
+
+#native ul li #co{
+bottom: 15px;
+right: -720px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+
+}
+
+#native ul li #ca{
+bottom: 15px;
+right: -850px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+
+}
+
+#native ul li #ne{
+bottom: 15px;
+right: -980px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+
+}
+
+
+#question ul li #one{
+
+top: 15px;
+right: -200px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+}
+
+#questions ul li #two{
+top: 50px;
+right: -600px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+
+}
+
+#questions ul li #three{
+top: 50px;
+right: -800px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+
+}
+#videoPage ul li{
+top: 15px;
+right: -200px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+}
+
+
+#weatherPage ul li{
+top: 15px;
+right: -1080px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+}
+
+
+#twitter{
+min-height: 100%;
+background-size: cover;
+background-image: url(../images/twitBackdrop.png);
+background-repeat: no-repeat;
+
+}
+
+#twitterPage ul li{
+top: 15px;
+right: -1150px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+position: fixed;
+width: 700px;
+}
+
+#output{
+right: -900px;
+margin: 0px auto 0px 50%;
+margin-right: 50%;
+}
+
+
+#output img{
+float:left;
+margin-right:10px;
+border:solid 3px #000000;
+width:60px;
+height:60px;
+}
+
+#output{
+color:#0066CC;
+font-weight:bold;
+
+}
+
+#output li{
+color:#ffffff;
+font-size:15px;
+width:300px;
+margin: 0 auto;
+list-style-type: none;
+background-color: #000066;
+border-radius: 15px;
+padding: 5px;
+margin: 20px;
+color: #ffffff;
+border-style: dotted;
+}
+
+
+div#map-canvas{
+
+width: 500px;
+height: 300px;
+}
+
+        

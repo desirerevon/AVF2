@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+        <meta charset="UTF-8">
+        <title>Lyrical Poetry</title>
+		<meta name="description" content="Desire Revon Demo App"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+        
+        
+		<!--  Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Style Sheets-->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+            
+
+            
+            
+</head>
+<body>
+
+
+  
+    <header>
+        
+        <a href="index.html" class="back_btn">BACK</a>
+    </header>
+    <div data-role="page" id="weekThree">
+            
+            <header>
+        		<a href="index.html" class="back_btn">BACK</a>
+            </header>
+            
+            <div data-role="content" id="content">
+                <h2>Week3 Discussion</h2>
+                <p>
+                <h3>What are the 'top selling' app categories in the U.S.? Japan? Great Britain?</h3>
+                The mobile market is growing very rapidly says Kevin Kelleher, a contributor for (CISCO), a corporation that produces computer networking products and service. The mobile market will grow 66% in the next five years (“a social network that really ”gets” you”,2013) and will exceed 13 times in exabytes as it stands now. This is the amount of data storage. Just think, one exabyte can store more than “50,000 years of dvd-quality video (exabyte).”  If this is the case I am pretty sure we can all start working from home using mobile devices because pretty soon there will be mobile applications for everything.
+                
+            Mobile applications are in high demand not just in the U.S., but in Japan and the UK as well.  The demand is mostly for games. The three markets although very different have the same demand. Angry Birds is the top selling game in Europe and the US and gets played for hours, downloads have skyrocketed and this continues to increase each year.  There have been some discrepancies reported regarding the privacy when utilizing Angry Birds just some “fyi” for the users, this application accesses your location and also can access your photos and use this data (Data-Gather, 2012).  Personally, I don’t believe this will have any affect on the demand for this application.  Europe also utilizes social media applications such a Facebook. Japan on the other hand out does Europe as well as the US when it comes to mobile devices and applications. The reason being is that the majority of their users are on flat rate plans and never have to worry about their bill changing drastically, less “device fragmentation and of course the best technology ends up in Japan before the US or European markets (japan years ahead, 2010).
+                In Japan the top seller apps would also be arcade and action games for Android and music games on iOS (the app map, 2013).
+                
+                </p>
+                <p>
+                <h3>Based on your three answers above, what might you infer about each of the markets listed? What is the average cost and bandwidth limits per user (in general) in each of the three markets? How may this impact development?
+
+                </h3>
+                What I would conclude about all the information I gathered from articles and stats is that you will find business in every market. The fact that there are available stats that are constantly updated is valuable information for young developers branching out into the real world. This gives the developer a lot of room to play with and understand the different markets. Where do you go from here? What type of an app should I design? What market am I trying to reach? These questions can now be answered.  Also as developers we need to consider other factors when we are building mobile apps and that would be data usage. How much data will be used in the application you create? You have to consider data overages? This is the cost and amount on average:
+                
+                US: 3.33 per mon for 1mbps/bandwidth
+                JAPAN: 27 cents for 1mbps/bandwitdh
+                UK:  10-30 dollars per month for 1mbps/bandwidth</p>
+                <p>
+                <h3>And, finally, what would be your suggested strategy in project topic and global market choice? Feel free to have a first and second choice.</h3>
+               Japan is financially the best option to go with as far as development. I would design a game with functionality similar to that of Angry Birds. My second choice would Europe because I do like social networking applications and although games outweigh social apps there still a lot to gain and this is something that I enjoy personally.
+                
+                </p>
+                <p>
+                <h3>Sources</h3>
+                CISCO:
+                
+                Mitchell, B. (2011, January). Cisco systems. Retrieved from http://compnetworking.about.com/od/cisconetworking/p/cisco-systems.htm
+                
+                
+                Mobile Growth:
+                
+                Kelleher, K. (2013,  February 20). Mobile growth us about to be staggering. Retrieved From http://tech.fortune.cnn.com/2013/02/20/mobile-will-growth-is-about-to-be-staggering
+                
+                Exabytes:
+                
+                Rouse, M. (2005, April). Exabyte. Retrieved from http://searchstorage.techtarget.com/definition/exabyte
+                
+                Bill Shock:
+                
+                Editor. (2010, March 25).  Why Japan is the king of mobile:the stats and facts. (“years ahead”). Retrieved from http://www.mobithinking.com/blog/why-japan-is-mobile-king
+                Popular Apps:
+                http://vator.tv/news/2013-02-21-gaming-apps-more-popular-in-mexico-than-japan
+                
+                
+                Info Graphics :
+                
+                http://gigaom.com/2012/11/23/the-state-of-broadband-in-the-u-s-infographic/
+                
+                bandwitdh
+                http://www.dslreports.com/shownews/US-333-Per-Mbps-Per-Month-Average-88090</p>
+            </div>
+            
+            
+            <footer>
+                <h5>Desire Revon :: AVF1302 :: Full Sail University</h5>
+                
+                
+            </footer>
+            
+        </div>
+
+  
+
+    <!--SCRIPTS-->
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="cordova-2.3.0.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+    </script>
+
+    
+    </body>
+</html>

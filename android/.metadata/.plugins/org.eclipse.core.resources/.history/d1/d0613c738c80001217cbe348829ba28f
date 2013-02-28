@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+        <title>Desire Revon</title>
+        
+		<meta name="description" content="Desire Revon Demo App"/>
+		<meta name="robots" content="index, follow"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+        
+        
+		<!--  Mobile viewport optimized -->
+		<meta name="HandheldFriendly" content="True">
+            <meta name="MobileOptimized" content="320"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <!--Style Sheets-->
+                <link rel="stylesheet" type="text/css" href="css/index.css" />
+                
+                
+                <!--Style Sheets-->
+                <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+    <header>
+        
+        <a href="index.html" class="back_btn">BACK</a>
+    </header>
+    
+    <div data-role="page" id="videoList">
+        
+        <div id="video">
+            
+            
+            <video controls width="320" height="240" poster="images/poster.png">
+                    <h3>Video Reflection Week One</h3>
+                    <source src="vidOne.ogv"  />
+                    <source src="vidOne.webm" />
+                    <source src="vidOne.mp4"  />
+            </video>
+                
+            <video controls width="320" height="240" poster="images/posterTwo.png">
+                    <h3>Video Reflection Week Two</h3>
+                    <source src="vidTwo.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+                    <source src="vidTwo.webm" type='video/webm; codecs="vp8,vorbis"' />
+                    <source src="vidTwo.mp4" type='video/mp4; codecs="avc1.42E01E,mp4a.40.2"'/>
+            </video>
+            
+            <video controls width="320" height="240" poster="images/posterThree.png">
+                   <h3>Video Reflection Week Three</h3>
+                   <source src="vidThree.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+                   <source src="vidThree.webm" type='video/webm; codecs="vp8,vorbis"' />
+                   <source src="vidThree.mp4" type='video/mp4; codecs="avc1.42E01E,mp4a.40.2"'/>
+                
+            </video>
+            
+            <video controls width="320" height="240" poster="images/posterFour.png">
+                <h3>Video Reflection Week Three</h3>
+                <source src="vidThree.ogv" type='video/ogg; codecs="theora, vorbis"'/>
+                <source src="vidThree.webm" type='video/webm; codecs="vp8,vorbis"' />
+                <source src="vidThree.mp4" type='video/mp4; codecs="avc1.42E01E,mp4a.40.2"'/>
+                
+            </video>
+        
+
+        
+    </div>
+        
+        
+    </div>
+        
+        
+        <footer>
+            <h5>Desire Revon :: AVF1302 :: Full Sail University</h5>
+        </footer>
+        
+        
+        <script type="text/javascript" src="js/libs/jquery.js"></script>
+        <script type="text/javascript" src="cordova-2.3.0.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
